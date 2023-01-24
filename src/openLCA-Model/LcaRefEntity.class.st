@@ -8,17 +8,6 @@ Class {
 	#category : #'openLCA-Model'
 }
 
-{ #category : #converting }
-LcaRefEntity >> asDictionary [
-	| dict |
-	dict := super asDictionary.
-	dict at: 'name' put: self name.
-	(self description) ifNotNil: [ 
-		dict at: 'description' put: self description
-	].
-	dict
-]
-
 { #category : #accessing }
 LcaRefEntity >> description [
 
