@@ -6,7 +6,7 @@ Class {
 		'exchange',
 		'formula',
 		'product',
-		'value'
+		'value',
 	],
 	#category : #'openLCA-Model'
 }
@@ -18,9 +18,9 @@ LcaAllocationFactor >> allocationType [
 ]
 
 { #category : #accessing }
-LcaAllocationFactor >> allocationType: anObject [
+LcaAllocationFactor >> allocationType: anAllocationType [
 
-	allocationType := anObject
+	allocationType := anAllocationType
 ]
 
 { #category : #accessing }
@@ -30,9 +30,9 @@ LcaAllocationFactor >> exchange [
 ]
 
 { #category : #accessing }
-LcaAllocationFactor >> exchange: anObject [
+LcaAllocationFactor >> exchange: anExchangeRef [
 
-	exchange := anObject
+	exchange := anExchangeRef
 ]
 
 { #category : #accessing }
@@ -42,9 +42,9 @@ LcaAllocationFactor >> formula [
 ]
 
 { #category : #accessing }
-LcaAllocationFactor >> formula: anObject [
+LcaAllocationFactor >> formula: aString [
 
-	formula := anObject
+	formula := aString
 ]
 
 { #category : #accessing }
@@ -54,19 +54,19 @@ LcaAllocationFactor >> product [
 ]
 
 { #category : #accessing }
-LcaAllocationFactor >> product: anObject [
+LcaAllocationFactor >> product: aRef [
 
-	product := anObject
+	product := aRef
 ]
 
 { #category : #accessing }
-LcaAllocationFactor >> value1 [
+LcaAllocationFactor >> value [
 
 	^ value
 ]
 
 { #category : #accessing }
-LcaAllocationFactor >> value: anObject [
+LcaAllocationFactor >> value: aNumber [
 
-	value := anObject
+	value := aNumber
 ]
