@@ -6,7 +6,7 @@ Class {
 		'exchange',
 		'formula',
 		'product',
-		'value',
+		'value'
 	],
 	#category : #'openLCA-Model'
 }
