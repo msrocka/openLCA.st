@@ -22,18 +22,6 @@ LcaDQSystem >> hasUncertainties: aBoolean [
 ]
 
 { #category : #accessing }
-LcaDQSystem >> source [
-
-	^ source
-]
-
-{ #category : #accessing }
-LcaDQSystem >> source: aRef [
-
-	source := aRef
-]
-
-{ #category : #accessing }
 LcaDQSystem >> indicators [
 
 	^ indicators
@@ -43,4 +31,16 @@ LcaDQSystem >> indicators [
 LcaDQSystem >> indicators: aCollection [
 
 	indicators := aCollection
+]
+
+{ #category : #accessing }
+LcaDQSystem >> source [
+
+	^ source
+]
+
+{ #category : #accessing }
+LcaDQSystem >> source: aRef [
+
+	source := aRef
 ]

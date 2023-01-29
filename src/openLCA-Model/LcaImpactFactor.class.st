@@ -38,6 +38,18 @@ LcaImpactFactor >> flowProperty: aRef [
 ]
 
 { #category : #accessing }
+LcaImpactFactor >> formula [
+
+	^ formula
+]
+
+{ #category : #accessing }
+LcaImpactFactor >> formula: aString [
+
+	formula := aString
+]
+
+{ #category : #accessing }
 LcaImpactFactor >> location [
 
 	^ location
@@ -47,6 +59,18 @@ LcaImpactFactor >> location [
 LcaImpactFactor >> location: aRef [
 
 	location := aRef
+]
+
+{ #category : #accessing }
+LcaImpactFactor >> uncertainty [
+
+	^ uncertainty
+]
+
+{ #category : #accessing }
+LcaImpactFactor >> uncertainty: anUncertainty [
+
+	uncertainty := anUncertainty
 ]
 
 { #category : #accessing }
@@ -71,28 +95,4 @@ LcaImpactFactor >> value [
 LcaImpactFactor >> value: aNumber [
 
 	value := aNumber
-]
-
-{ #category : #accessing }
-LcaImpactFactor >> formula [
-
-	^ formula
-]
-
-{ #category : #accessing }
-LcaImpactFactor >> formula: aString [
-
-	formula := aString
-]
-
-{ #category : #accessing }
-LcaImpactFactor >> uncertainty [
-
-	^ uncertainty
-]
-
-{ #category : #accessing }
-LcaImpactFactor >> uncertainty: anUncertainty [
-
-	uncertainty := anUncertainty
 ]

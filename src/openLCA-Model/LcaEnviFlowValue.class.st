@@ -9,18 +9,6 @@ Class {
 }
 
 { #category : #accessing }
-LcaEnviFlowValue >> enviFlow [
-
-	^ enviFlow
-]
-
-{ #category : #accessing }
-LcaEnviFlowValue >> enviFlow: anEnviFlow [
-
-	enviFlow := anEnviFlow
-]
-
-{ #category : #accessing }
 LcaEnviFlowValue >> amount [
 
 	^ amount
@@ -30,4 +18,16 @@ LcaEnviFlowValue >> amount [
 LcaEnviFlowValue >> amount: aNumber [
 
 	amount := aNumber
+]
+
+{ #category : #accessing }
+LcaEnviFlowValue >> enviFlow [
+
+	^ enviFlow
+]
+
+{ #category : #accessing }
+LcaEnviFlowValue >> enviFlow: anEnviFlow [
+
+	enviFlow := anEnviFlow
 ]

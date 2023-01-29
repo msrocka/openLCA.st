@@ -22,18 +22,6 @@ LcaEnviFlow >> flow: aRef [
 ]
 
 { #category : #accessing }
-LcaEnviFlow >> location [
-
-	^ location
-]
-
-{ #category : #accessing }
-LcaEnviFlow >> location: aRef [
-
-	location := aRef
-]
-
-{ #category : #accessing }
 LcaEnviFlow >> isInput [
 
 	^ isInput
@@ -43,4 +31,16 @@ LcaEnviFlow >> isInput [
 LcaEnviFlow >> isInput: aBoolean [
 
 	isInput := aBoolean
+]
+
+{ #category : #accessing }
+LcaEnviFlow >> location [
+
+	^ location
+]
+
+{ #category : #accessing }
+LcaEnviFlow >> location: aRef [
+
+	location := aRef
 ]

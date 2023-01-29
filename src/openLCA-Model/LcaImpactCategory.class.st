@@ -25,6 +25,18 @@ LcaImpactCategory >> code: aString [
 ]
 
 { #category : #accessing }
+LcaImpactCategory >> direction [
+
+	^ direction
+]
+
+{ #category : #accessing }
+LcaImpactCategory >> direction: aDirection [
+
+	direction := aDirection
+]
+
+{ #category : #accessing }
 LcaImpactCategory >> impactFactors [
 
 	^ impactFactors
@@ -58,18 +70,6 @@ LcaImpactCategory >> refUnit [
 LcaImpactCategory >> refUnit: aString [
 
 	refUnit := aString
-]
-
-{ #category : #accessing }
-LcaImpactCategory >> direction [
-
-	^ direction
-]
-
-{ #category : #accessing }
-LcaImpactCategory >> direction: aDirection [
-
-	direction := aDirection
 ]
 
 { #category : #accessing }

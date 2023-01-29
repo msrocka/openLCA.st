@@ -2,6 +2,7 @@ Class {
 	#name : #LcaRef,
 	#superclass : #LcaEntity,
 	#instVars : [
+		'id',
 		'name',
 		'description',
 		'category',
@@ -12,6 +13,32 @@ Class {
 	],
 	#category : #'openLCA-Model'
 }
+
+{ #category : #'instance creation' }
+LcaRef class >> fromDictionary: aDict [
+	
+	| ref |
+	ref := self new.
+	(aDict isKindOf: Dictionary) ifTrue: [ 
+		aDict at: 'category' ifPresent: [ :c | ref category: c ].
+		ref description: (aDict at: 'description' ifAbsent: nil).
+		ref flowType: (aDict at: 'flowType' ifAbsent: nil).
+		ref location: (aDict at: 'location' ifAbsent: nil).
+		ref name: (aDict at: 'name' ifAbsent: nil).
+		ref processType: (aDict at: 'processType'  ifAbsent: nil).
+		ref refUnit: (aDict at: 'refUnit' ifAbsent: nil).
+	].
+	^ ref
+]
+
+{ #category : #'instance creation' }
+LcaRef class >> fromJson: aStringOrStream [
+
+	^ self fromDictionary: (
+		(aStringOrStream isKindOf: String)
+			ifTrue: [ STONJSON fromString: aStringOrStream ]
+			ifFalse: [ STONJSON fromStream: aStringOrStream ]).
+]
 
 { #category : #accessing }
 LcaRef >> category [
@@ -47,6 +74,18 @@ LcaRef >> flowType [
 LcaRef >> flowType: anObject [
 
 	flowType := anObject
+]
+
+{ #category : #accessing }
+LcaRef >> id [
+
+	^ id
+]
+
+{ #category : #accessing }
+LcaRef >> id: anObject [
+
+	id := anObject
 ]
 
 { #category : #accessing }

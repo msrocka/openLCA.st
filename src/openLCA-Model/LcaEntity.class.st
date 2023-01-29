@@ -1,9 +1,6 @@
 Class {
 	#name : #LcaEntity,
 	#superclass : #Object,
-	#instVars : [
-		'id'
-	],
 	#category : #'openLCA-Model'
 }
 
@@ -31,16 +28,4 @@ LcaEntity >> asDictionary [
 { #category : #converting }
 LcaEntity >> asJson [
 	^ STON toJsonStringPretty: self asDictionary
-]
-
-{ #category : #accessing }
-LcaEntity >> id [
-
-	^ id
-]
-
-{ #category : #accessing }
-LcaEntity >> id: anObject [
-
-	id := anObject
 ]

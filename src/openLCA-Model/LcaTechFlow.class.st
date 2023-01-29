@@ -9,18 +9,6 @@ Class {
 }
 
 { #category : #accessing }
-LcaTechFlow >> provider [
-
-	^ provider
-]
-
-{ #category : #accessing }
-LcaTechFlow >> provider: aRef [
-
-	provider := aRef
-]
-
-{ #category : #accessing }
 LcaTechFlow >> flow [
 
 	^ flow
@@ -30,4 +18,16 @@ LcaTechFlow >> flow [
 LcaTechFlow >> flow: aRef [
 
 	flow := aRef
+]
+
+{ #category : #accessing }
+LcaTechFlow >> provider [
+
+	^ provider
+]
+
+{ #category : #accessing }
+LcaTechFlow >> provider: aRef [
+
+	provider := aRef
 ]

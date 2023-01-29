@@ -9,18 +9,6 @@ Class {
 }
 
 { #category : #accessing }
-LcaImpactValue >> impactCategory [
-
-	^ impactCategory
-]
-
-{ #category : #accessing }
-LcaImpactValue >> impactCategory: aRef [
-
-	impactCategory := aRef
-]
-
-{ #category : #accessing }
 LcaImpactValue >> amount [
 
 	^ amount
@@ -30,4 +18,16 @@ LcaImpactValue >> amount [
 LcaImpactValue >> amount: aNumber [
 
 	amount := aNumber
+]
+
+{ #category : #accessing }
+LcaImpactValue >> impactCategory [
+
+	^ impactCategory
+]
+
+{ #category : #accessing }
+LcaImpactValue >> impactCategory: aRef [
+
+	impactCategory := aRef
 ]

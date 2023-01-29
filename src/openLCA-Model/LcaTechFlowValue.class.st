@@ -9,18 +9,6 @@ Class {
 }
 
 { #category : #accessing }
-LcaTechFlowValue >> techFlow [
-
-	^ techFlow
-]
-
-{ #category : #accessing }
-LcaTechFlowValue >> techFlow: aTechFlow [
-
-	techFlow := aTechFlow
-]
-
-{ #category : #accessing }
 LcaTechFlowValue >> amount [
 
 	^ amount
@@ -30,4 +18,16 @@ LcaTechFlowValue >> amount [
 LcaTechFlowValue >> amount: aNumber [
 
 	amount := aNumber
+]
+
+{ #category : #accessing }
+LcaTechFlowValue >> techFlow [
+
+	^ techFlow
+]
+
+{ #category : #accessing }
+LcaTechFlowValue >> techFlow: aTechFlow [
+
+	techFlow := aTechFlow
 ]

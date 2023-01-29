@@ -22,18 +22,6 @@ LcaFlowPropertyFactor >> conversionFactor: aNumber [
 ]
 
 { #category : #accessing }
-LcaFlowPropertyFactor >> isRefFlowProperty [
-
-	^ isRefFlowProperty
-]
-
-{ #category : #accessing }
-LcaFlowPropertyFactor >> isRefFlowProperty: aBoolean [
-
-	isRefFlowProperty := aBoolean
-]
-
-{ #category : #accessing }
 LcaFlowPropertyFactor >> flowProperty [
 
 	^ flowProperty
@@ -43,4 +31,16 @@ LcaFlowPropertyFactor >> flowProperty [
 LcaFlowPropertyFactor >> flowProperty: aRef [
 
 	flowProperty := aRef
+]
+
+{ #category : #accessing }
+LcaFlowPropertyFactor >> isRefFlowProperty [
+
+	^ isRefFlowProperty
+]
+
+{ #category : #accessing }
+LcaFlowPropertyFactor >> isRefFlowProperty: aBoolean [
+
+	isRefFlowProperty := aBoolean
 ]

@@ -23,6 +23,18 @@ LcaLocation >> code: aString [
 ]
 
 { #category : #accessing }
+LcaLocation >> geometry [
+
+	^ geometry
+]
+
+{ #category : #accessing }
+LcaLocation >> geometry: aGeoJSON [
+
+	geometry := aGeoJSON
+]
+
+{ #category : #accessing }
 LcaLocation >> latitude [
 
 	^ latitude
@@ -44,16 +56,4 @@ LcaLocation >> longitude [
 LcaLocation >> longitude: aNumber [
 
 	longitude := aNumber
-]
-
-{ #category : #accessing }
-LcaLocation >> geometry [
-
-	^ geometry
-]
-
-{ #category : #accessing }
-LcaLocation >> geometry: aGeoJSON [
-
-	geometry := aGeoJSON
 ]

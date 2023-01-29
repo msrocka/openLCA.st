@@ -2,6 +2,7 @@ Class {
 	#name : #LcaRefEntity,
 	#superclass : #LcaEntity,
 	#instVars : [
+		'id',
 		'name',
 		'description'
 	],
@@ -18,6 +19,18 @@ LcaRefEntity >> description [
 LcaRefEntity >> description: anObject [
 
 	description := anObject
+]
+
+{ #category : #accessing }
+LcaRefEntity >> id [
+
+	^ id
+]
+
+{ #category : #accessing }
+LcaRefEntity >> id: anObject [
+
+	id := anObject
 ]
 
 { #category : #accessing }

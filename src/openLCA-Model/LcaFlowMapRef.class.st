@@ -35,18 +35,6 @@ LcaFlowMapRef >> flowProperty: aRef [
 ]
 
 { #category : #accessing }
-LcaFlowMapRef >> unit [
-
-	^ unit
-]
-
-{ #category : #accessing }
-LcaFlowMapRef >> unit: aRef [
-
-	unit := aRef
-]
-
-{ #category : #accessing }
 LcaFlowMapRef >> provider [
 
 	^ provider
@@ -56,4 +44,16 @@ LcaFlowMapRef >> provider [
 LcaFlowMapRef >> provider: aRef [
 
 	provider := aRef
+]
+
+{ #category : #accessing }
+LcaFlowMapRef >> unit [
+
+	^ unit
+]
+
+{ #category : #accessing }
+LcaFlowMapRef >> unit: aRef [
+
+	unit := aRef
 ]

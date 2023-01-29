@@ -45,6 +45,42 @@ LcaProcess >> defaultAllocationMethod: anAllocationType [
 ]
 
 { #category : #accessing }
+LcaProcess >> dqEntry [
+
+	^ dqEntry
+]
+
+{ #category : #accessing }
+LcaProcess >> dqEntry: aString [
+
+	dqEntry := aString
+]
+
+{ #category : #accessing }
+LcaProcess >> dqSystem [
+
+	^ dqSystem
+]
+
+{ #category : #accessing }
+LcaProcess >> dqSystem: aRef [
+
+	dqSystem := aRef
+]
+
+{ #category : #accessing }
+LcaProcess >> exchangeDqSystem [
+
+	^ exchangeDqSystem
+]
+
+{ #category : #accessing }
+LcaProcess >> exchangeDqSystem: aRef [
+
+	exchangeDqSystem := aRef
+]
+
+{ #category : #accessing }
 LcaProcess >> exchanges [
 
 	^ exchanges
@@ -54,6 +90,18 @@ LcaProcess >> exchanges [
 LcaProcess >> exchanges: aCollection [
 
 	exchanges := aCollection
+]
+
+{ #category : #accessing }
+LcaProcess >> isInfrastructureProcess [
+
+	^ isInfrastructureProcess
+]
+
+{ #category : #accessing }
+LcaProcess >> isInfrastructureProcess: aBoolean [
+
+	isInfrastructureProcess := aBoolean
 ]
 
 { #category : #accessing }
@@ -117,27 +165,15 @@ LcaProcess >> processType: aProcessType [
 ]
 
 { #category : #accessing }
-LcaProcess >> dqSystem [
+LcaProcess >> socialAspects [
 
-	^ dqSystem
+	^ socialAspects
 ]
 
 { #category : #accessing }
-LcaProcess >> dqSystem: aRef [
+LcaProcess >> socialAspects: aCollection [
 
-	dqSystem := aRef
-]
-
-{ #category : #accessing }
-LcaProcess >> exchangeDqSystem [
-
-	^ exchangeDqSystem
-]
-
-{ #category : #accessing }
-LcaProcess >> exchangeDqSystem: aRef [
-
-	exchangeDqSystem := aRef
+	socialAspects := aCollection
 ]
 
 { #category : #accessing }
@@ -150,40 +186,4 @@ LcaProcess >> socialDqSystem [
 LcaProcess >> socialDqSystem: aRef [
 
 	socialDqSystem := aRef
-]
-
-{ #category : #accessing }
-LcaProcess >> dqEntry [
-
-	^ dqEntry
-]
-
-{ #category : #accessing }
-LcaProcess >> dqEntry: aString [
-
-	dqEntry := aString
-]
-
-{ #category : #accessing }
-LcaProcess >> isInfrastructureProcess [
-
-	^ isInfrastructureProcess
-]
-
-{ #category : #accessing }
-LcaProcess >> isInfrastructureProcess: aBoolean [
-
-	isInfrastructureProcess := aBoolean
-]
-
-{ #category : #accessing }
-LcaProcess >> socialAspects [
-
-	^ socialAspects
-]
-
-{ #category : #accessing }
-LcaProcess >> socialAspects: aCollection [
-
-	socialAspects := aCollection
 ]

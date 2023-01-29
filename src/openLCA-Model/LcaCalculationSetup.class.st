@@ -17,15 +17,39 @@ Class {
 }
 
 { #category : #accessing }
-LcaCalculationSetup >> target [
+LcaCalculationSetup >> allocation [
 
-	^ target
+	^ allocation
 ]
 
 { #category : #accessing }
-LcaCalculationSetup >> target: aRef [
+LcaCalculationSetup >> allocation: anAllocationType [
 
-	target := aRef
+	allocation := anAllocationType
+]
+
+{ #category : #accessing }
+LcaCalculationSetup >> amount [
+
+	^ amount
+]
+
+{ #category : #accessing }
+LcaCalculationSetup >> amount: aNumber [
+
+	amount := aNumber
+]
+
+{ #category : #accessing }
+LcaCalculationSetup >> flowProperty [
+
+	^ flowProperty
+]
+
+{ #category : #accessing }
+LcaCalculationSetup >> flowProperty: aRef [
+
+	flowProperty := aRef
 ]
 
 { #category : #accessing }
@@ -65,15 +89,27 @@ LcaCalculationSetup >> parameters: aCollection [
 ]
 
 { #category : #accessing }
-LcaCalculationSetup >> allocation [
+LcaCalculationSetup >> target [
 
-	^ allocation
+	^ target
 ]
 
 { #category : #accessing }
-LcaCalculationSetup >> allocation: anAllocationType [
+LcaCalculationSetup >> target: aRef [
 
-	allocation := anAllocationType
+	target := aRef
+]
+
+{ #category : #accessing }
+LcaCalculationSetup >> unit [
+
+	^ unit
+]
+
+{ #category : #accessing }
+LcaCalculationSetup >> unit: aRef [
+
+	unit := aRef
 ]
 
 { #category : #accessing }
@@ -98,40 +134,4 @@ LcaCalculationSetup >> withRegionalization [
 LcaCalculationSetup >> withRegionalization: aBoolean [
 
 	withRegionalization := aBoolean
-]
-
-{ #category : #accessing }
-LcaCalculationSetup >> amount [
-
-	^ amount
-]
-
-{ #category : #accessing }
-LcaCalculationSetup >> amount: aNumber [
-
-	amount := aNumber
-]
-
-{ #category : #accessing }
-LcaCalculationSetup >> unit [
-
-	^ unit
-]
-
-{ #category : #accessing }
-LcaCalculationSetup >> unit: aRef [
-
-	unit := aRef
-]
-
-{ #category : #accessing }
-LcaCalculationSetup >> flowProperty [
-
-	^ flowProperty
-]
-
-{ #category : #accessing }
-LcaCalculationSetup >> flowProperty: aRef [
-
-	flowProperty := aRef
 ]
